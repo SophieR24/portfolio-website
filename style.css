@@ -1,0 +1,132 @@
+/*
+Colors used:
+White: #FFFFFF;
+Black: #262425;
+Light Grey: #E9E9E9;
+Dark Grey: ##DBDBDB;
+Red: #EC5043;
+Off Red: #
+*/
+
+/* TYPEFACE */
+
+body {
+    background-color: #ffffff;
+    font-size: 18px; 
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400; 
+    line-height: 1.5;
+    color: #262425;
+}
+
+h1, h2, h3 {
+    line-height: 1;
+}
+
+h1 {
+    font-size: 1.7em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+/* IMAGE SIZE */
+
+img {
+    width: 100%;
+}
+
+/* HYPERLINKS */
+
+a {
+  color: #262425;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 1; 
+}
+
+a:visited {
+  color: #262425;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 1;
+}
+
+a:hover,
+a:focus {
+  color: #262425;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+a:active { 
+  color: #262425;
+  font-weight: 700;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+
+/* PRIMARY BUTTON */
+
+.button.primary {
+  background-color: #EC5043;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 100px;
+  transition: 0.2s
+}
+
+.button.primary:hover {
+  opacity: 0.75; 
+}
+
+.button.primary:active {
+  opacity: 0.5;
+}
+
+/* SECONDARY BUTTON */
+
+.button.secondary {
+  display: inline-block;
+  background-color: #E9E9E9;
+  color: #262425;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 100px;
+  opacity: 1;
+  transition: 0.2s
+}
+
+.button.secondary:hover {
+  display: inline-block;
+  background-color: #DBDBDB;
+  color: #262425;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 100px;
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.button.secondary:active {
+  display: inline-block;
+  background-color: #DBDBDB;
+  color: #262425;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 100px;
+  opacity: 0.75;
+  transition: 0.2s;
+}
+
