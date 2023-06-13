@@ -8,6 +8,10 @@ Red: #EC5043;
 Off Red: #
 */
 
+* {
+  box-sizing: border-box;
+}
+
 /* TYPEFACE */
 
 body {
@@ -38,23 +42,27 @@ h3 {
     font-weight: 800;
 }
 
-/* IMAGE SIZE */
+/* IMAGE & SVG SIZE */
 
 img {
     width: 100%;
 }
 
+.logo {
+  max-width: 250px;
+}
+
 /* HYPERLINKS */
 
 a {
-  color: #262425;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   opacity: 1; 
 }
 
 a:visited {
-  color: #262425;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   opacity: 1;
@@ -62,14 +70,14 @@ a:visited {
 
 a:hover,
 a:focus {
-  color: #262425;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   opacity: 0.75;
 }
 
 a:active { 
-  color: #262425;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
   opacity: 0.5;
@@ -128,5 +136,67 @@ a:active {
   border-radius: 100px;
   opacity: 0.75;
   transition: 0.2s;
+}
+
+/* OVERALL LAYOUT */
+
+.container {
+  padding: 60px 60px;
+}
+
+.row {
+  margin: 60px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+header {
+  background-color: #262425;
+  text-align: center;
+}
+
+
+#contact {
+  background-color: #262425;
+  color: #ffffff;
+}
+
+/* NAVIGUATION BAR */
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a,a:visited,a:hover,
+a:focus,a:active  {
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+/* HERO */
+
+#hero {
+  background-color: #262425;
+  color: #ffffff;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+#hero p {
+  text-align: center;
 }
 
