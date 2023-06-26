@@ -55,7 +55,7 @@ img {
 }
 
 .mylogo {
-  width: 60px;
+  width: 40px;
 }
 
 .logo {
@@ -151,21 +151,6 @@ a:active {
   transition: 0.2s;
 }
 
-/* ANIMATION */
-
-
-.rotate {
-  animation: rotate 2s infinite linear;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 /* GENERAL LAYOUT CLASS */
 
@@ -185,13 +170,12 @@ a:active {
   margin: 0px 0px;
 }
 
-
 .center {
   text-align: center;
 }
 
 main {
-padding-top: 172px;
+padding-top: 120px;
 }
 
 .copywrite {
@@ -204,15 +188,22 @@ padding-top: 172px;
 }
 
 
-/* NAVIGUATION BAR */
+/* NAVIGUATION BAR/HAMBURGER MENU */
+
+header {
+  background-color: #262425;
+  position:fixed;
+  width: 100%;
+}
+
+header > .container {
+  padding-bottom: 10px;
+}
 
 nav > ul {
   list-style-type: none;
   padding: 0px;
-}
-
-nav > ul > li {
-  display: inline-block
+  margin: 0px;
 }
 
 nav > ul > li > a,a:visited,a:hover,
@@ -220,6 +211,48 @@ a:focus,a:active  {
   padding: 0px 10px;
 }
 
+.menuicon {
+  width:40px;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding-right: 0;
+  font-size: 20px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  text-align: right;
+  padding: 10px 0;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 
 /* FOOTER */
 
@@ -270,16 +303,6 @@ a:focus,a:active  {
 
 /* WORK PAGE  */
 
-header {
-  background-color: #262425;
-  text-align: center;
-  position:fixed;
-  width: 100%;
-}
-
-header > .container {
-  padding-bottom: 10px;
-}
 
 #hero {
   background-color: #262425;
@@ -324,6 +347,23 @@ header > .container {
 
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
+
+ 
+  nav > ul > li {
+    display: inline-block
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
 
   #mystory > h2 {
     margin-top: 0px;

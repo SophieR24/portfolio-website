@@ -21,14 +21,17 @@
             <header> 
                 <!-- NAVIGUATION -->
                 <div class="container">
-                    <img class="mylogo" src="img/folderIconsLogos/sr_logo.png">
+                    <div class="navtoggle" id="myNavtoggle">
+                        <img class="mylogo" src="img/folderIconsLogos/sr_logo.png">
                     <nav> 
                         <ul> 
                             <li><a href="index.html">WORK</a></li>
                             <li><a href="about.html">ABOUT</a></li>
                             <li><a href="#contact">CONTACT</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><img class="menuicon" src="img/folderIconsLogos/menu.svg" alt="Menu"></a></li>
                         </ul>
                     </nav>
+                    </div>
                 </div>
             </header>   
           
@@ -72,19 +75,6 @@
                             <a href="nomad.html" class="button secondary">See Project</a>
                         </div>
                     </div>
-                    <!-- P2: ANIMATION TEST -->
-                    <div class="row">
-                        <div class="col-md-6 col-lg-5"> 
-                            <picture> 
-                                <img class="rotate" src="svg_canadianflag.svg" alt="My Image">
-                            </picture>
-                        </div>
-                        <div class="col-md-6 col-lg-"> 
-                            <h3> Test </h3>
-                            <p>Test.</p>
-                            <a href="nomad.html" class="button secondary">See Project</a>
-                        </div>
-                    </div>
                 </div>
              </div>
             </main>
@@ -111,6 +101,7 @@
                     </div>
                 </div>
             </footer>
+            <script src="js/jquery-3.7.0.min.js"></script>
             <script src="js/scripts.js"></script>
         </body>     
 </html>
