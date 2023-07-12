@@ -295,7 +295,7 @@ a:focus,a:active  {
 
 /* ABOUT PAGE  */
 
-#skilllist {
+.skilllist {
   margin: 0px 0px;
   padding: 0px 15px;
 }
@@ -324,7 +324,7 @@ a:focus,a:active  {
 
 /* REACH PAGE */
 
-#lightboximage{
+.lightboximage{
   background-color: #262425;
 }
 
